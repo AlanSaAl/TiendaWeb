@@ -6,12 +6,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!--Estilos -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--titulo-->
     <title>Gallos</title>
+
+
+
 </head>
 
 <body>
-    <h1>Tienda online de los Gallos de oro</h1> 
-    <p>Esta es una pagina en blanco que servira como estructura para nuestro proyecto de la pagina web.</p>   
+    <div class="container">
+        <!--fila uno-->
+        <div class="row" id="f1">
+            <!--collapse -->
+            <div class="accordion" id="acordion1">
+                <!--mision-->
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="false" aria-controls="collapseOne">
+                                Misión
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#acordion1">
+                        <div class="card-body">
+                            Ofrecer productos de plata .925 de Taxco de calidad, para satisfacer gustos variados.
+                        </div>
+                    </div>
+                </div>
+                <!--vision-->
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Visión.
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#acordion1">
+                        <div class="card-body">
+                            Tener una gama variada para todo tipo de gustos para llegar a todo tipo de gente con piezas
+                            de primera calidad .925 de Taxco De Alarcón Guerrero.
+                        </div>
+                    </div>
+                </div>
+                <!--objetivo-->
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Objetivo
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#acordion1">
+                        <div class="card-body">
+                            Tener una página funcional y productos variados de plata .925 de Taxco con diseños únicos
+                            para diversos gustos.
+                        </div>
+                    </div>
+                </div>
+
+                <!--valores-->
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Valores
+                            </button>
+
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#acordion1">
+                        <div class="card-body">
+                            <ul>
+                                <li>
+                                    Buscamos una expansión más allá de este tipo de productos artesanales 100%
+                                    mexicanos.
+                                </li>
+                                <li>
+                                    Luchamos por mantener una conexión vendedor-cliente óptima para que cada uno tenga
+                                    y de lo mejor de sí.
+                                </li>
+                                <li>
+                                    Nos esforzamos por mantener un precio adecuado para nuestros clientes manteniendo
+                                    el
+                                    respeto y valor de cada una de las piezas teniendo en cuenta que son arte.
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!--fin collapse y fin de fila una-->
+
+
+
+    </div>
+
+    <!-- scrips -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    </div>
 </body>
+
 </html>
