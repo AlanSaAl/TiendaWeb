@@ -1,10 +1,21 @@
-# Archivos de este proyecto
+# Carpetas y archivos
 
-* index.html -> Archivo html que contiene la estructura de la pagina.
+* includes -> archivos con codigo que se llama en varias secciones de la página.
 
-* style.css  -> Archivo que contiene los estilos de la pagina.
+* assets -> imágenes, archivos css y archivos js.    
+    style.css -> Archivo que contiene los estilos de la página (no se usa y posiblemente no se use).
 
-* README.md  -> Archivo de texto en el que se escriben aspectos que hay que tener en cuenta hacerca del proyecto.
+* index.php -> Archivo de la pantalla de inicio de la página.
+
+* login.php -> Pantalla para iniciar sesión.
+
+* signup.php -> Pantalla para registrarse.
+
+* database.php -> Hace la conexion con la base de datos.
+
+* save.php -> Pasa los datos a la base de datos.
+
+* README.md -> Archivo de texto en el que se escriben aspectos que hay que tener en cuenta acerca del proyecto.
 
 ## Instrucciones para conectar github con VS Code:
 
@@ -34,4 +45,4 @@ GitHub hay que hacer lo siguiente:
 2.- Despues te pedira una mensaje (el cual es una pequeña idea de que fue lo que modificaste) y luego de escribirlo tendras listo  
     tu commit.
 
-3.- Pero para subirlo a la pagina hay que dar click en "Synchronize Changes" (boton en la parte inferior) y despues de dar aceptar     ya podras ver reflejados tus cambios en GitHub.
+3.- Pero para subirlo a la pagina hay que dar click en "Synchronize Changes" (boton en la parte inferior) y despues de dar aceptar ya podras       ver reflejados tus cambios en GitHub.
