@@ -14,7 +14,7 @@
 
 <body>
 
-    <div class="container">
+    
         <nav class="navbar navbar-expand-lg navbar-light" style="background:black ;">
 
             <!--Logo y Silver Taxco-->
@@ -65,7 +65,7 @@
                         </div>
                     </li>
                 </ul>
-            </div>
+            
 
         </nav>
 
