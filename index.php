@@ -64,6 +64,24 @@
         <p class="mt-2 pt-3 text-center"> La plata 925 es un símbolo que utilizan los artesanos para determinar el grado de pureza incluido en una pieza. Ofrecemos 100% de plata mexicana de Taxco de Alarcón con .925, 92.5% de plata pura y 7.5% de cobre, asegurando su pureza y durabilidad.</p>
     </section>
 
-    
+    <!--Slider dos --->
+    <div class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/slider21.jpg" width="630" height="630" class="rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/slider22.jpg" width="900" height="630" class="rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/slider23.jpg" width="630" height="630" class="rounded mx-auto d-block" alt="...">
+            </div>
+        </div>
+    </div>
+    <!--Politica de envio-->
+    <section  class="p-4 mb-6 bg-dark text-white">
+
+        <p>hello </p>
+    </section>
 
     <?php include("includes/footer.php") ?>
