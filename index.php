@@ -95,16 +95,54 @@
 
     <!--Contacto -->
 
-    <section class="contariner">
 
-        <h1>Aqui falta la forma de contactarnos </h1>
+    <div class="container p-4 bg-dark">
+        <div class="row ">
+            <div class="col-md-4 bg-dark">
+                <p class="mt-4 pt-4 text-center text-white">
+                    <font size=6>Contact With Us.</font>
+                </p>
+                <p class="text-center text-white">
+                    silvertaxco925@gmail.com
+                </p>
+                <p class="text-center text-white">
+                    <font size=2>7621000459</font>
+                </p>
 
+                <div class="card card-body bg-dark">
+                    <form action="guardar.php" method="POST" name="formulario">
+                        <div class="form-group">
+                            <input type="text" name="nombre" class="form-control" placeholder="Nombre" autofocus>
+                        </div>
 
-    </section>
+                        <div class="form-group">
+                            <input type="text" name="correo" class="form-control" placeholder="E-mail" autofocus>
+                        </div>
 
+                        <div class="form-group">
+                            <input type="text" name="asunto" class="form-control" placeholder="Issue" autofocus>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="telefono" class="form-control" placeholder="Phone" autofocus>
+                        </div>
+
+                        <div class="form-group">
+                            <input style="WIDTH: 300px; HEIGHT: 98px" type="text" name="mensaje" class="form-control" placeholder="Message" autofocus>
+                        </div>
+                        <input type="submit" class="btn btn-success btn-block" name="save" value="Send">
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+            <img src="assets/iglesia.jpg" alt="Responsive image" >
+            </div>
+        </div>
+    </div>
 
     <!---Mapa google maps -->
-
+    <hr>
     <div class="container">
         <div class="row">
             <div class="col-3">
