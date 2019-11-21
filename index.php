@@ -66,7 +66,6 @@
     </section>
 
     <!--Slider dos --->
-    <hr>
     <div class="carousel slide  dark" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -80,7 +79,7 @@
             </div>
         </div>
     </div>
-    <hr>
+
     <!--Politica de envio-->
     <section class="p-4 mb-6  text-white">
         <img src="assets/corazon.jpg" width="400" height="400" class="rounded-circle mx-auto d-block" alt="">
@@ -111,7 +110,7 @@
                 </p>
 
                 <div class="card card-body dark">
-                    <form action="guardar.php"  class="dark" method="POST" name="formulario">
+                    <form action="guardar.php" class="dark" method="POST" name="formulario">
                         <div class="form-group dark">
                             <input type="text" name="nombre" class="form-control" placeholder="Nombre" autofocus>
                         </div>
@@ -129,7 +128,7 @@
                         </div>
 
                         <div class="form-group">
-                            <input style="WIDTH: 300px; HEIGHT: 98px" type="text" name="mensaje" class="form-control" placeholder="Message" autofocus>
+                            <input style="WIDTH: 245px; HEIGHT: 98px" type="text" name="mensaje" class="form-control" placeholder="Message" autofocus>
                         </div>
                         <input type="submit" class="btn btn-success btn-block" name="save" value="Send">
                     </form>
@@ -159,4 +158,5 @@
         </div>
     </div>
     <hr>
-    <?php include("includes/footer.php") ?>
+
+<?php include("includes/footer.php") ?>
