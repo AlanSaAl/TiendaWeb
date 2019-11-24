@@ -126,8 +126,7 @@
                         </div>
 
                         <div class="form-group">
-                            <input style="WIDTH: 300px; HEIGHT: 98px" type="text" name="mensaje" class="form-control" placeholder="Message">
-                            <input style="WIDTH: 245px; HEIGHT: 98px" type="text" name="mensaje" class="form-control" placeholder="Message">
+                            <input style="WIDTH: 300px; HEIGHT: 98px" type="text" name="mensaje" class="form-control" placeholder="Message">                            
                         </div>
                         <input type="submit" class="btn btn-success btn-block" name="save" value="Send">
                     </form>
