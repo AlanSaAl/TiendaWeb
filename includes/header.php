@@ -4,7 +4,11 @@ session_start();
 
 include("database.php");
 
-$usuario = $_SESSION['username'];
+if (isset($_SESSION['username'])) {
+
+    $usuario = $_SESSION['username'];
+
+}
 
 ?>
 
@@ -64,7 +68,8 @@ $usuario = $_SESSION['username'];
                         Perfil
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="login.php">Iniciar Sesión/Cerrar Sesiòn</a>
+                        <a class="dropdown-item" href="login.php">Iniciar Sesión</a>
+                        <a class="dropdown-item" href="logout.php">Cerrar Sesión</a>
                         <a class="dropdown-item" href="signup.php">Registrarse</a>
                         <a class="dropdown-item" href="index.php">Informacion Personal</a>
                     </div>

@@ -58,6 +58,8 @@ if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['edad']
 
         </form>
 
+        <!-- Mensaje de registro -->
+
         <div class="col-md-8 offset-md-2">
 
             <?php if (!empty($message)) : ?>

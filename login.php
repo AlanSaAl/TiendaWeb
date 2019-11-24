@@ -42,6 +42,7 @@ if (!empty($_POST['email']) && !empty($_POST['contraseña'])) {
 
             </form>
 
+            <!-- Mensaje de login -->
             <?php if (!empty($message)) : ?>
                 <p><?= $message ?><p>
             <?php endif; ?>
