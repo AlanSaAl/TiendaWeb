@@ -38,7 +38,7 @@ if (!empty($_POST['email']) && !empty($_POST['contraseña'])) {
                 <div class="form-group">
                     <input type="password" class="form-control" name="contraseña" placeholder="Contraseña">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
 
             </form>
 
