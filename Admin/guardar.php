@@ -13,8 +13,8 @@ if (isset($_POST['Subir'])) {
 
   #Esta es la carpteta donde se guardaran todas las imaganes de los productos y su ruta sera "TiendaWeb/ImagenesProductos/"
 
-  $carpeta = $_SERVER['DOCUMENT_ROOT'] . "/TiendaWeb/ImagenesProductos/";
-
+  #$carpeta = $_SERVER['DOCUMENT_ROOT'] . "/TiendaWeb/ImagenesProductos/";
+  $carpeta = "ImagenesProductos/";
   #Primer if verifica que el tipo de archivo sea una imagen de tipo jpeg, pjpeg, png
   if ($_FILES["archivo"]["type"] == "image/jpeg" || $_FILES["archivo"]["type"] == "image/pjpeg" || $_FILES["archivo"]["type"] == "image/png") {
     #Verifica que exista la carpeta 
