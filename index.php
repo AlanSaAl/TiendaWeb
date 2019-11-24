@@ -1,10 +1,9 @@
 <?php include("includes/header.php") ?>
-<hr>
+<hr />
 
 <body style="background: black;">
 
     <!--Slider-->
-
     <div class="Slider">
         <div id="carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -56,7 +55,6 @@
     <!--Carrusel-->
 
     <!--Texto plata .95-->
-
     <section class="p-3 mb-2 bg-white text-dark">
 
         <p class="mt-4 pt-3 text-center">Plata .925</p>
@@ -66,6 +64,7 @@
     </section>
 
     <!--Slider dos --->
+    <hr />
     <div class="carousel slide  dark" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -79,6 +78,7 @@
             </div>
         </div>
     </div>
+    <hr />
 
     <!--Politica de envio-->
     <section class="p-4 mb-6  text-white">
@@ -94,8 +94,6 @@
     </section>
 
     <!--Contacto -->
-
-
     <div class="container p-4 bg-dark">
         <div class="row ">
             <div class="col-md-4 dark">
@@ -142,7 +140,7 @@
     </div>
 
     <!---Mapa google maps -->
-    <hr>
+    <hr />
     <div class="container">
         <div class="row">
             <div class="col-3">
@@ -157,6 +155,7 @@
             </div>
         </div>
     </div>
+    <hr />    
     <hr>
 
 <?php include("includes/footer.php") ?>
