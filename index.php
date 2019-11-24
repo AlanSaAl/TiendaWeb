@@ -64,7 +64,10 @@
     </section>
 
     <!--Slider dos --->
+<<<<<<< HEAD
     <hr />
+=======
+>>>>>>> 69e5dd5681fa7b2291ad39b13ec677290603f176
     <div class="carousel slide  dark" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -78,7 +81,10 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     <hr />
+=======
+>>>>>>> 69e5dd5681fa7b2291ad39b13ec677290603f176
 
     <!--Politica de envio-->
     <section class="p-4 mb-6  text-white">
@@ -127,6 +133,7 @@
 
                         <div class="form-group">
                             <input style="WIDTH: 300px; HEIGHT: 98px" type="text" name="mensaje" class="form-control" placeholder="Message">
+                            <input style="WIDTH: 245px; HEIGHT: 98px" type="text" name="mensaje" class="form-control" placeholder="Message" autofocus>
                         </div>
                         <input type="submit" class="btn btn-success btn-block" name="save" value="Send">
                     </form>
@@ -156,5 +163,6 @@
         </div>
     </div>
     <hr />    
+    <hr>
 
 <?php include("includes/footer.php") ?>
