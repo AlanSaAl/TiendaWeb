@@ -3,7 +3,7 @@ include("includes/header.php");
 include("database.php");
 ?>
 <?php 
-$query = 'Select * from producto where categoria= "Esposas"';
+$query = 'Select * from producto where categoria= "Aretes"';
 $resultado = mysqli_query($conn,$query);
 if (mysqli_num_rows($resultado)%2 == 0){
     $filas = mysqli_num_rows($resultado)/2;  

@@ -44,22 +44,22 @@ if (isset($_SESSION['username'])) {
                     <a class="nav-link" href="index.php" style="color: blanchedalmond;">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: blanchedalmond;">Charms & Necklaces</a>
+                    <a class="nav-link" href="Collares.php" style="color: blanchedalmond;">Charms & Necklaces</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: blanchedalmond;">Earrins</a>
+                    <a class="nav-link" href="Aretes.php" style="color: blanchedalmond;">Earrins</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: blanchedalmond;">Rings</a>
+                    <a class="nav-link" href="Anillos.php" style="color: blanchedalmond;">Rings</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: blanchedalmond;">Bracelets and Slaves</a>
+                    <a class="nav-link" href="Esposas.php" style="color: blanchedalmond;">Bracelets and Slaves</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: blanchedalmond;">Chains</a>
+                    <a class="nav-link" href="Cadenas.php" style="color: blanchedalmond;">Chains</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: blanchedalmond;">Art</a>
+                    <a class="nav-link" href="Arte.php" style="color: blanchedalmond;">Art</a>
                 </li>
 
                 <li class="nav-item dropdown">
