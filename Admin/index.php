@@ -31,7 +31,15 @@
             <textarea type="text" name="Descripcion" rows="2" class="form-control" placeholder="Descripcion"></textarea>
           </div>
           <div class="form-group">
-            <input type="text" name="Categoria" class="form-control" placeholder="Categoria" autofocus>
+            <input list="Categoria" name="Categoria" class="form-control" placeholder="Categoria" autofocus>
+            <datalist id="Categoria">
+                <option value="Collares">
+                <option value="Aretes">
+                <option value="Anillos">
+                <option value="Esposas">
+                <option value="Cadenas">
+                <option value="Arte">
+                </datalist>
           </div>
           <div class="form-group">
             <input type="number" name="Cantidad" class="form-control" placeholder="Cantidad" autofocus>
