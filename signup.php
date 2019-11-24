@@ -2,7 +2,7 @@
 
 include("includes/header.php");
 
-if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['edad']) && !empty($_POST['telefono']) && !empty($_POST['contraseña'])) {
+if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['edad']) && !empty($_POST['telefono']) && !empty($_POST['contraseña']) && !empty($_POST['c_contraseña']) && ($_POST['contraseña'] == $_POST['c_contraseña'])) {
 
     $message = '';
 
@@ -51,7 +51,7 @@ if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['edad']
                 <input type="password" class="form-control" name="contraseña" placeholder="Contraseña">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" placeholder="Confirmar contraseña">
+                <input type="password" class="form-control" name="c_contraseña" placeholder="Confirmar contraseña">
             </div>
 
             <button type="submit" class="btn btn-primary" value="Register">Enviar</button>
