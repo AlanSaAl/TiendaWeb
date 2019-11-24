@@ -112,23 +112,23 @@
                 <div class="card card-body dark">
                     <form action="guardar.php" class="dark" method="POST" name="formulario">
                         <div class="form-group dark">
-                            <input type="text" name="nombre" class="form-control" placeholder="Nombre" autofocus>
+                            <input type="text" name="nombre" class="form-control" placeholder="Nombre">
                         </div>
 
                         <div class="form-group">
-                            <input type="text" name="correo" class="form-control" placeholder="E-mail" autofocus>
+                            <input type="text" name="correo" class="form-control" placeholder="E-mail">
                         </div>
 
                         <div class="form-group">
-                            <input type="text" name="asunto" class="form-control" placeholder="Issue" autofocus>
+                            <input type="text" name="asunto" class="form-control" placeholder="Issue">
                         </div>
 
                         <div class="form-group">
-                            <input type="text" name="telefono" class="form-control" placeholder="Phone" autofocus>
+                            <input type="text" name="telefono" class="form-control" placeholder="Phone">
                         </div>
 
                         <div class="form-group">
-                            <input style="WIDTH: 245px; HEIGHT: 98px" type="text" name="mensaje" class="form-control" placeholder="Message" autofocus>
+                            <input style="WIDTH: 245px; HEIGHT: 98px" type="text" name="mensaje" class="form-control" placeholder="Message">
                         </div>
                         <input type="submit" class="btn btn-success btn-block" name="save" value="Send">
                     </form>

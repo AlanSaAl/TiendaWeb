@@ -6,33 +6,40 @@ if (isset($_POST['Subir'])) {
   echo "llego";
 
   $Nombre = $_POST['Nombre'];
-  $Precio= $_POST['Precio'];
-  $Description=$_POST['Descripcion'];
-  $Categoria=$_POST['Categoria'];
-  $Cantidad =$_POST['Cantidad'];
+  $Precio = $_POST['Precio'];
+  $Description = $_POST['Descripcion'];
+  $Categoria = $_POST['Categoria'];
+  $Cantidad = $_POST['Cantidad'];
 
- 
+  #Esta es la carpteta donde se guardaran todas las imaganes de los productos y su ruta sera "TiendaWeb/ImagenesProductos/"
 
-  echo $_FILES["archivo"]["type"];
-  
+  $carpeta = $_SERVER['DOCUMENT_ROOT'] . "/TiendaWeb/ImagenesProductos/";
 
-
-#El siguiente codigo es solo para guardar la ubicacion de la imagen (archivo)
-
-#Definimos la carpeta donde se guardaran las imagenes 
-$CarpetaDestino = "ImagenesProducto/";
-  
-
-
-
+  #Primer if verifica que el tipo de archivo sea una imagen de tipo jpeg, pjpeg, png
+  if ($_FILES["archivo"]["type"] == "image/jpeg" || $_FILES["archivo"]["type"] == "image/pjpeg" || $_FILES["archivo"]["type"] == "image/png") {
+    #Verifica que exista la carpeta 
+    if (file_exists($carpeta) || @mkdir($carpeta)) {
+      $origen = $_FILES["archivo"]["tmp_name"];
+      $destino = $carpeta . $_FILES["archivo"]["name"];
+      if (@move_uploaded_file($origen, $destino)) {
+        echo "Archivo movido correctamente";
+      }
+    }
+  }
   // $query = "INSERT INTO task(title, description) VALUES ('$title', '$description')";
   // $result = mysqli_query($conn, $query);
   // if(!$result) {
   //   die("Query Failed.");
   // }
 
-  $_SESSION['message'] = 'Task Saved Successfully';
-  $_SESSION['message_type'] = 'success';
-  #header('Location: index.php');
+  $query = "USE tiendaweb";
+  $result = mysqli_query($conn, $query);
+  
+  $query1 = "INSERT INTO producto(Nombre, Precio, Descripcion, Categoria, Cantidad, imagen) values('$Nombre','$Precio', '$Description', '$Categoria', '$Cantidad', '$destino')";
+  $resul = mysqli_query($conn, $query1);
+  
 
+  $_SESSION['message'] = 'Se subio nuevo articulo con exito';
+  $_SESSION['message_type'] = 'success';
+  header('Location: index.php');
 }
