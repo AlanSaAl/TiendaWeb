@@ -1,21 +1,53 @@
-<?php include("includes/header.php") ?>
+<?php
 
-<div class="container-fluid">
+include("includes/header.php");
 
-    <!-- formulario de inicio de sesión -->
-    <form action="login.php" method="post">
+if (!empty($_POST['email']) && !empty($_POST['contraseña'])) {    
 
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+    $email = $_POST['email'];
+    $contraseña = $_POST['contraseña'];
 
-    </form>
+    $query = "SELECT COUNT(*) as contar FROM usuario WHERE email = '$email' and contraseña = '$contraseña'";
+    $consulta = mysqli_query($conn, $query);
+    $array = mysqli_fetch_array($consulta); 
+    
+    $message = '';
+
+    if ($array['contar'] > 0) {        
+        $_SESSION['username'] = $email;
+        header("Location: index.php");
+    } else {
+        $message = 'Información incorrecta';
+    }
+}
+
+?>
+
+<div class="container">    
+
+        <div class="col-md-4 offset-md-4">
+
+            <h1>Iniciar sesión</h1>            
+
+            <!-- formulario de inicio de sesión -->
+            <form action="login.php" method="post">
+
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="contraseña" placeholder="Contraseña">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </form>
+
+            <?php if (!empty($message)) : ?>
+                <p><?= $message ?><p>
+            <?php endif; ?>
+
+        </div>        
+
 </div>
 
 <?php include("includes/footer.php") ?>

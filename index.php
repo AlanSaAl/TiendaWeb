@@ -1,10 +1,9 @@
 <?php include("includes/header.php") ?>
-<hr>
+<hr />
 
 <body style="background: black;">
 
     <!--Slider-->
-
     <div class="Slider">
         <div id="carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -56,7 +55,6 @@
     <!--Carrusel-->
 
     <!--Texto plata .95-->
-
     <section class="p-3 mb-2 bg-white text-dark">
 
         <p class="mt-4 pt-3 text-center">Plata .925</p>
@@ -66,7 +64,7 @@
     </section>
 
     <!--Slider dos --->
-    <hr>
+    <hr />
     <div class="carousel slide  dark" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -80,7 +78,8 @@
             </div>
         </div>
     </div>
-    <hr>
+    <hr />
+
     <!--Politica de envio-->
     <section class="p-4 mb-6  text-white">
         <img src="assets/corazon.jpg" width="400" height="400" class="rounded-circle mx-auto d-block" alt="">
@@ -95,8 +94,6 @@
     </section>
 
     <!--Contacto -->
-
-
     <div class="container p-4 bg-dark">
         <div class="row ">
             <div class="col-md-4 dark">
@@ -111,25 +108,25 @@
                 </p>
 
                 <div class="card card-body dark">
-                    <form action="guardar.php"  class="dark" method="POST" name="formulario">
+                    <form action="guardar.php" class="dark" method="POST" name="formulario">
                         <div class="form-group dark">
-                            <input type="text" name="nombre" class="form-control" placeholder="Nombre" autofocus>
+                            <input type="text" name="nombre" class="form-control" placeholder="Nombre">
                         </div>
 
                         <div class="form-group">
-                            <input type="text" name="correo" class="form-control" placeholder="E-mail" autofocus>
+                            <input type="text" name="correo" class="form-control" placeholder="E-mail">
                         </div>
 
                         <div class="form-group">
-                            <input type="text" name="asunto" class="form-control" placeholder="Issue" autofocus>
+                            <input type="text" name="asunto" class="form-control" placeholder="Issue">
                         </div>
 
                         <div class="form-group">
-                            <input type="text" name="telefono" class="form-control" placeholder="Phone" autofocus>
+                            <input type="text" name="telefono" class="form-control" placeholder="Phone">
                         </div>
 
                         <div class="form-group">
-                            <input style="WIDTH: 300px; HEIGHT: 98px" type="text" name="mensaje" class="form-control" placeholder="Message" autofocus>
+                            <input style="WIDTH: 300px; HEIGHT: 98px" type="text" name="mensaje" class="form-control" placeholder="Message">
                         </div>
                         <input type="submit" class="btn btn-success btn-block" name="save" value="Send">
                     </form>
@@ -143,7 +140,7 @@
     </div>
 
     <!---Mapa google maps -->
-    <hr>
+    <hr />
     <div class="container">
         <div class="row">
             <div class="col-3">
@@ -158,5 +155,6 @@
             </div>
         </div>
     </div>
-    <hr>
-    <?php include("includes/footer.php") ?>
+    <hr />    
+
+<?php include("includes/footer.php") ?>
