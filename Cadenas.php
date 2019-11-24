@@ -25,7 +25,7 @@ if (mysqli_num_rows($resultado)%2 == 0){
                 <img src=<?php echo $carpeta.$row['imagen']; ?> class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title"><?php echo $row['Nombre']; ?></h5>
-                <p class="card-text"><?php echo $row['Descripcion']; ?></p>
+                <p class="card-text"><?php echo "Precio $",$row['Precio']; ?></p>
                 <a href="#" class="btn btn-primary">Comprar</a>
   </div>
 </div>
