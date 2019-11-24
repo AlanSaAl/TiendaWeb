@@ -1,27 +1,36 @@
 <?php
 include("db.php");
-$title = '';
-$description= '';
+$Nombre = "";
+$Precio = "";
+$Description = "";
+$Categoria = "";
+$Cantidad = "";
 
-if  (isset($_GET['id'])) {
+if (isset($_GET['id'])) {
   $id = $_GET['id'];
-  $query = "SELECT * FROM task WHERE id=$id";
+  $query = "SELECT * FROM producto WHERE id=$id";
   $result = mysqli_query($conn, $query);
   if (mysqli_num_rows($result) == 1) {
     $row = mysqli_fetch_array($result);
-    $title = $row['title'];
-    $description = $row['description'];
+    $Nombre = $row['Nombre'];
+    $Precio = $row['Precio'];
+    $Description = $row['Descripcion'];
+    $Categoria = $row['Categoria'];
+    $Cantidad = $row['Cantidad'];
   }
 }
 
 if (isset($_POST['update'])) {
   $id = $_GET['id'];
-  $title= $_POST['title'];
-  $description = $_POST['description'];
+  $Nombre = $_POST['Nombre'];
+  $Precio = $_POST['Precio'];
+  $Description = $_POST['Descripcion'];
+  $Categoria = $_POST['Categoria'];
+  $Cantidad = $_POST['Cantidad'];
 
-  $query = "UPDATE task set title = '$title', description = '$description' WHERE id=$id";
+  $query = "UPDATE producto set Nombre='$Nombre', Precio = '$Precio', Descripcion = '$Description', Categoria = '$Categoria', Cantidad = '$Cantidad' WHERE id=$id";
   mysqli_query($conn, $query);
-  $_SESSION['message'] = 'Task Updated Successfully';
+  $_SESSION['message'] = 'Inventario Actualizado';
   $_SESSION['message_type'] = 'warning';
   header('Location: index.php');
 }
@@ -32,17 +41,26 @@ if (isset($_POST['update'])) {
   <div class="row">
     <div class="col-md-4 mx-auto">
       <div class="card card-body">
-      <form action="edit.php?id=<?php echo $_GET['id']; ?>" method="POST">
-        <div class="form-group">
-          <input name="title" type="text" class="form-control" value="<?php echo $title; ?>" placeholder="Update Title">
-        </div>
-        <div class="form-group">
-        <textarea name="description" class="form-control" cols="30" rows="10"><?php echo $description;?></textarea>
-        </div>
-        <button class="btn-success" name="update">
-          Update
-</button>
-      </form>
+        <form action="edit.php?id=<?php echo $_GET['id']; ?>" method="POST">
+          <div class="form-group">
+            <input name="Nombre" type="text" class="form-control" value="<?php echo $Nombre; ?>" placeholder="Update Nombre">
+          </div>
+          <div class="form-group">
+            <input name="Precio" type="text" class="form-control" value="<?php echo $Precio; ?>" placeholder="Update Precio">
+          </div>
+          <div class="form-group">
+            <textarea name="Descripcion" class="form-control" cols="30" rows="4"><?php echo $Description; ?></textarea>
+          </div>
+          <div class="form-group">
+            <input name="Categoria" type="text" class="form-control" value="<?php echo $Categoria; ?>" placeholder="Update Categoria">
+          </div>
+          <div class="form-group">
+            <input name="Cantidad" type="text" class="form-control" value="<?php echo $Cantidad; ?>" placeholder="Update Cantidad">
+          </div>
+          <button class="btn-success" name="update">
+            Update
+          </button>
+        </form>
       </div>
     </div>
   </div>

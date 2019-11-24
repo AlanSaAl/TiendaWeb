@@ -3,6 +3,7 @@
 <?php include('includes/header.php'); ?>
 
 <main class="container p-4">
+  <p class="text-center">Inventario</p>
   <div class="row">
     <div class="col-md-4">
       <!-- MESSAGES -->
@@ -36,7 +37,7 @@
             <input type="number" name="Cantidad" class="form-control" placeholder="Cantidad" autofocus>
           </div>
           <div>
-            <input type="file" name="archivo"   class="btn btn-success btn-block" value="Imagen">
+            <input type="file" name="archivo" class="btn btn-success btn-block" value="Imagen">
           </div>
           <hr>
           <input type="submit" name="Subir" class="btn btn-success btn-block" value="Subir al inventario">
@@ -60,25 +61,29 @@
         <tbody>
 
           <?php
-          $query = "SELECT * FROM task";
+          $query = "USE tiendaweb";
+          $result = mysqli_query($conn, $query);
+          $query = "SELECT * FROM producto";
           $result_tasks = mysqli_query($conn, $query);
-          if(isset($result_tasks)){
-          while ($row = mysqli_fetch_assoc($result_tasks)) { ?>
-            <tr>
-              <td><?php echo $row['title']; ?></td>
-              <td><?php echo $row['description']; ?></td>
-              <td><?php echo $row['created_at']; ?></td>
-              <td>
-                <a href="edit.php?id=<?php echo $row['id'] ?>" class="btn btn-secondary">
-                  <i class="fas fa-marker"></i>
-                </a>
-                <a href="delete_task.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">
-                  <i class="far fa-trash-alt"></i>
-                </a>
-              </td>
-            </tr>
-          <?php } 
-            } #fin del if
+          if (isset($result_tasks)) {
+            while ($row = mysqli_fetch_assoc($result_tasks)) { ?>
+              <tr>
+                <td><?php echo $row['Nombre']; ?></td>
+                <td><?php echo $row['Precio']; ?></td>
+                <td><?php echo $row['Descripcion']; ?></td>
+                <td><?php echo $row['Categoria']; ?></td>
+                <td><?php echo $row['Cantidad']; ?></td>
+                <td>
+                  <a href="edit.php?id=<?php echo $row['id'] ?>" class="btn btn-secondary">
+                    <i class="fas fa-marker"></i>
+                  </a>
+                  <a href="delete_task.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">
+                    <i class="far fa-trash-alt"></i>
+                  </a>
+                </td>
+              </tr>
+          <?php }
+          } #fin del if
           ?>
 
 
@@ -87,5 +92,6 @@
     </div>
   </div>
 </main>
+
 
 <?php include('includes/footer.php'); ?>
