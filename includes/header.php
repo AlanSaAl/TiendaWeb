@@ -9,7 +9,7 @@ if (isset($_SESSION['username'])) {
     $usuario = $_SESSION['username'];
 }
 
-?>
+?>  
 
 <!DOCTYPE html>
 <html lang="es">
@@ -82,7 +82,7 @@ if (isset($_SESSION['username'])) {
         <?php endif; ?>
 
         <!--Logo de carrito-->
-        <a class="navbar-brand" href="#" style="color:white;">
+        <a class="navbar-brand" href="carrito.php" style="color:white;">
             <img src="assets/carrito.png" id="carrito" width="30" height="30" class="d-inline-block align-top" alt="">
         </a>        
 
