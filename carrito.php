@@ -31,7 +31,25 @@
             <h3  class="mt-4 pt-1 text-center">Cantidad</h3>
         </div>
 
-        <?php ?>
+        <?php 
+        #mostrar lo del carrito 
+        while($row = mysqli_fetch_assoc($resultado)){?>
+            <div class="row">
+                <?php $q = "Select Nombre, Precio from producto where =".$row[idProducto] ;
+                       $consulta = mysqli_query($conn, $q);
+                       $x = mysqli_fetch_assoc($consulta);   
+                ?>
+                <div class="col-md-4"> 
+                     <?php echo $x['Nombre']; ?>
+                </div>
+                <div class="col-md-4"> 
+                    <?php echo $x['Precio']; ?>
+                </div>
+                <div class="col-md-4"> <?php echo $row['cantidad']; ?> </div>
+
+            </div>
+        <?php } ?>
+        ?>
         
     <?php } #fin del segundo else para mostrar el producto ?>
     
